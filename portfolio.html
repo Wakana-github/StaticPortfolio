@@ -34,10 +34,10 @@
 <!-- END NAV -->
 <div class="container">
   <!-- Title section -->
-    <section id="TitlePage">
+    <section id="welcome-section">
       <div class="hello">
         <p id="hello">HELLO, WELCOME TO</p>
-        <h1 id="hello-name">Wakana Gushi's</h1>
+        <h1 id="hello-name">Wakana's</h1>
         <h1 id="hello-title">PORTFOLIO</h1>
         <p id="jobtitle">WEB / APPLICATION DEVELOPER</p>
       </div>
@@ -87,28 +87,6 @@
 
     </section>
 
-    <!-- Job History -->
-    <section id="job-history">
-    <div class="job-history-container">
-      <h1 class="title job-history-title">JOB HISTORY</h1>
-        <div class="DON">
-          <img src="image/don_logo.png" alt="Don-logo">
-          <p class="job-heading">DON JAPANESE RESTAURANT<br>(2021-2022)</p>
-          <p>⎼ All rounder:<br>Cooking, garnishing dishes, ordering and managing stocks, serving customers,  supervising other staff.</p>
-        </div>
-        <div class="DENSO">
-          <img src="image/Denso_logo.png" alt="DENSO-logo">
-          <p class="job-heading">DENSO CORRPORATION<br>(2021-2022)</p>
-          <p>⎼ Production worker (Manufacturing):<br> Quality assurance for a variety of automobile parts.</p>
-          </div>
-          <div class="NJS">
-            <img id="NJS-logo" src="image/njs_logo.png" alt="NJS-logo">
-            <p class="job-heading">NJS CO., LTD<br>(2019-2021)</p>
-            <p>⎼ Civil Engineering consultant:<br> Consulting Wastewater System for local government, checking regulations, making documents (such as waterway maps and planning), costing estimates and asset management.</p>
-            </div>
-        
-    </div>
-    </section>
 
     <!-- Skills-->
     <section id="skills">
@@ -144,7 +122,7 @@
               <li>- MySQL</li>
               <li>- Oracle SQL Developer</li>
               <li>- Visual Studio Code</li>
-              <li>- Visual Studio</li>
+              <li>- Git/GitHub</li>
               <li>- Microsoft suite</li>              
             </ul>
           </div>
@@ -169,31 +147,31 @@
     
   <!-- Projects-->
     <section id="projects">
-      <div class="project-tile">
       <h1 class="title projects-title">MY WORK</h1>
+      <div class="project-container">
         <div class="project1">
-        <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
-        <img class="project-image1" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project1">
+          <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
+            <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project1">
             <p class="project-name">
               <span class="code">&lt;</span>
               Project1
               <span class="code">/&gt;</span>
             </p>
           </a></a>
-          </div>
-          <div class="project2">
-            <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
-            <img class="project-image1" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project1">
+        </div>
+        <div class="project2">
+          <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
+            <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project1">
                 <p class="project-name">
                   <span class="code">&lt;</span>
                   Project2
                   <span class="code">/&gt;</span>
                 </p>
-            </a></a>
-          </div>
+          </a></a>
+        </div>
           <div class="project3">
             <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
-            <img class="project-image1" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project1">
+              <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project1">
                 <p class="project-name">
                   <span class="code">&lt;</span>
                   Project3
@@ -206,43 +184,47 @@
 
   <!-- Contact -->
     <fieldset id="contact">
-      <div id="contact-form-title">
-      <h1 class="title contact-form">CONTACT FORM</h1>
-      <p>Have you got a question?
+        <h1 class="title contact-form-title">CONTACT FORM</h1>
+        <p>Have you got a question?
           <br>Please send me a sessage through this form.</p>
-      </div>
 
       <!-- Contact form -->
-      <div class="contact">
-        <form class="contact-form" method="POST" target="_blank" action=""></form>
-          <label for="name" id="name-label">Name:</label>
-          <input type="text" id="name" name="name" required placeholder="Full Name">
-          <label for="email" id="email-label"   >Email:</label>
-          <input type="email" id="email" required placeholder="Email Address">
-          <h2 class="article_heading">Message</h2>
-          <label for="textbox">Message: 
-            <textarea id="message" name="message" rows="10" cols="30" placeholder="Hello, I'm reaching out you because...blah blah blah"></textarea>
-            </label>
-        </form>
-      </div>
-      <!-- letter-image -->
-      <div class="mail-image">
-        <img src="" alt="mail-image">
-      </div>
+      <div class="contact-form-container">
+        <div class="contact-content">
+          <form class="contact-form" method="POST" target="_blank" action=""></form>
+            <label class="form-heading" for="name" id="name-label">Name:</label>
+            <div class="name">
+              <input type="text" id="name" name="name" required placeholder="Full Name">
+            </div>
+            <label class="form-heading" for="email" id="email-label">Email:</label>
+            <div class="email">
+              <input type="email" id="email" required placeholder="Email">
+            </div>
+            <label class="form-heading" for="textbox">Message:</label>
+            <div class="textbox">
+              <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your  message here"></textarea>
+            </div>
+            <button id="submit-button" type="submit" value="submit">Submit</button>
+          </form>
+        </div>
 
-      <!-- contact-link -->
-      <div class="contact-links">
-        <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+        <!-- letter-image -->
+        <div class="mail-image">
+          <img id="mail-icon" src="image/mail_icon.png" alt="mail-image">
+        </div>
       </div>
     </fieldset>
   </div>
 
-<!-- Footer -->
-<footer>
-  <p>
-        © Created for
-        <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i class="fab fa-free-code-camp"></i></a>
-        </p>
+  <!-- Footer -->
+  <footer>
+      <!-- contact-link -->
+      <div class="contact-links">
+         <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    <p>© Created for
+      <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i class="fab fa-free-code-camp"></i></a>
+    </p>
   </footer>
 </body>
 </html>

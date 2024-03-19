@@ -1,6 +1,19 @@
+/* 
+  stylesheet for portfolio
+  responsive webpage
+  created on 27/2/2024
+  last edited 20/3/2024
+  created by Wakana Gushi 
+*/
+
+
 :root {
   --main-background:#F8F2EC;
   --nav-color:#E3E6E6;
+  --footer-color:#E3E6E6;
+  --input-color: #F8F2EC ;
+  --button-color: #9B9A96;
+  --button-hover-color: #413839;
 }
 
 *, ::before,
@@ -8,9 +21,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
-/* import new fonts */
+/* -----import new fonts----- */
 @font-face {
   font-family: "agrandir";
   src: url("font/Agrandir-Regular.otf") format("truetype");
@@ -40,18 +54,35 @@
   src: url("font/Arsenica Trial Light Italic 300.ttf") format("truetype");
 }
 
-/* body */
+/* -----body----- */
 
 body{
   font-family: "TT-Commons", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   background-color: var(--main-background);
   line-height:1.4rem;
+  max-width: 1920px;
+  min-width: 350px;
+  position: center;
+  margin: 10% auto;
+}
+ p {
+  font-size: 1.8rem;
+  line-height: 1.6rem;
+ }
+
+ a {
+  color: #0000A5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #79BAEC;
+  cursor:pointer;
 }
 
 
-
-/* nav */
+/* -----nav----- */
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -59,10 +90,11 @@ body{
   top: 0;
   left: 0;
   width: 100%;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   background: var(--nav-color);
   padding: 10px;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-  font-size: 18px;
+
+  font-size: 1.2rem;
 }
  ul {
   list-style: none;
@@ -78,9 +110,11 @@ body{
 }
 
 
-/* Title  */
 
-.TitlePage {
+
+/* -----Welcone-----  */
+
+.welcome-section {
   display: flex;
   width: 100%;
   height: 100vh;
@@ -111,15 +145,15 @@ body{
 #hello-title {
   font-size: 3rem;
   margin-top: 80px;
+  margin-bottom: 60px;
 }
 
 #jobtitle {
   font-size: 1.3rem;
-  margin-top: 60px;
 }
 
 
-#TitlePage img{
+#welcome-section img{
   height: auto;
   width: 100%;
 }
@@ -154,21 +188,23 @@ body{
 
 
 
-/* about me */
+/* -----about me----- */
 
 .title{
   font-family: "TT-Commons", sans-serif;
   font-size: 4rem;
-  margin-top: 70px;
+  margin-top: 120px;
   margin-bottom: 60px;
   line-height:4rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
 }
 
 .about-container {
   display: grid;
   grid-template-columns:  repeat(8, 1fr);
-  grid-template-rows:  1fr 2fr;
+  grid-template-rows:  repeat(3, 150px);
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .about-title{
@@ -178,12 +214,10 @@ body{
 }
 
 .about-me p {
-
-  width: 70%;
+  width: 75%;
   height: auto;
   grid-column: 5 / 8;
-  grid-row: 2 / 3;
-  font-size: 1.6rem;
+  grid-row: 2 / 4;
   align-self: start;
   justify-self: center;
   margin-top:10px; 
@@ -192,7 +226,7 @@ body{
 .my-photo-wrapper{
   display: flex;
   grid-column: 3 / 5;
-  grid-row: 2 / 3;
+  grid-row: 2 / 4;
   align-self: start;
   justify-self: center;
 }
@@ -205,13 +239,15 @@ body{
 }
 
 
-/* qualification */
+/* -----qualification----- */
 
 
 .qualification-container{
   display: grid;
   grid-template-columns:  repeat(8, 1fr);
   grid-template-rows:  1fr 2fr;
+  margin-top: 120px;
+  margin-bottom: 50px;
 }
 
 .qualifications-title{
@@ -230,7 +266,6 @@ body{
   height: auto;
   grid-column: 2 / 5;
   grid-row: 2 / 3;
-  font-size: 1.5rem;
   align-self: start;
   justify-self: center;
   padding-top: 25px;
@@ -251,75 +286,19 @@ body{
 }
 
 
-/* Job history */
-
-.job-history-container{
-  display: grid;
-  grid-template-columns:  repeat(8, 1fr);
-  grid-template-rows:  repeat(8, 100px);
-  font-family: "TT-Commons", sans-serif;
-  justify-items: center;
-  align-items: center;
-  margin-top:80px;
-}
-
-.job-history-title{
-  grid-column:  1/ -1;
-  grid-row: 1 / 3;
-  justify-self: center;
-  align-self: center;
-  margin-top: 30px;
-}
-
-.DON{
-  grid-column: 1 / 4;
-  grid-row: 2 /8 ;
-  justify-self: end;
-  padding: 0 80px 0 60px;
 
 
-}
-
-.DENSO{
-  grid-column: 4 / 6;
-  grid-row: 3 /9 ;
-}
-
-.NJS {
-  grid-column: 6 / 9;
-  grid-row: 2 /8 ;
-  padding: 0 60px 0 80px;
-
-  
-}
-
-.job-heading{
-  font-size: 2.3rem;
-  margin-top: 20px;
-}
-
-#job-history p{
-  font-size: 1.4rem;
-  margin-top:20px;
-}
-
-#job-history img{
-max-width:85%;
-height: auto;
-}
-
-#NJS-logo {
-  width:90%;
-}
-
-
-/* Skills */
+/* -----Skills----- */
 
 .skills-container{
   display: grid;
   grid-template-columns:  repeat(5, 1fr);
   grid-template-rows:  repeat(5, 150px);
+  margin-bottom: 100px;
+  margin-right: 50px;
+  grid-gap: 5px;
 }
+
 
 .skils-title{
   grid-column:  1/ -1;
@@ -331,9 +310,12 @@ height: auto;
 .skill-sentense {
   grid-column:  1/ 3;
   grid-row: 1 / -1;
-  font-size: 2.5rem;
   justify-self: center;
   align-self: center;
+}
+
+.skill-sentense p{
+  font-size: 3rem;
   line-height:3.3rem;
   letter-spacing: 3px;
 }
@@ -341,19 +323,19 @@ height: auto;
 .italic {
   font-style: italic;
   font-family: "arsenica-light-italic", "TT-Commons", sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.8rem;
   margin: 0 0 0 -40px;
 }
 
 
-.skill_heading{
+.skill_heading {
   font-family: "arsenica", "TT-Commons", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.0rem;
   margin-top: 50px;
   margin-bottom: 30px;
 }
 .skills-container li{
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 5px;
 }
 .top-skills {
@@ -379,46 +361,329 @@ height: auto;
 
 
 
-/* My Work */
+/* -----My Work----- */
+.projects-title{
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+
+#projects{
+ margin: 0 40px;
+}
+
+.project-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap:3rem;
+  width: 100%;
+  margin: 100px auto;
+
+  
+}
+
+.project {
+  border-radius: 5px;
+}
+.project-image{
+  height: auto;
+  width: 100%
+}
+
+.project-name {
+  font-size:1.6rem;
+ text-align: center;
+}
 
 
-/* Footer */
+/* -----contact form----- */
+
+.contact-form-title {
+ margin: 100px 0 50px 100px;;
+}
+
+#contact{
+  border: none;
+  margin-bottom: 100px;
+}
+
+#contact > p{
+  font-size: 1.8rem;
+  margin: 0 0 0 120px;
+}
+
+.contact-form-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px 0 0 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.contact-form {
+  grid-column:  1/ 2;
+}
+
+.form-heading {
+  font-family: "arsenica", "TT-Commons", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.mail-image {
+  grid-column:  2/ 3;
+}
+input, textarea {
+  background: var(--input-color);
+  margin:15px 0;
+  line-height: 1.5rem;
+  border: none;
+  border-bottom-style: dashed;
+  border-bottom-width: 2px;
+  font-size: 1rem;
+}
+
+
+
+#mail-icon {
+  width: 60%;
+  height: auto;
+}
+
+#submit-button {
+  padding: 10px 20px;
+  border-radius: 15%; 
+  background-color: var(--button-color);
+  color: white;
+}
+
+#submit-button:hover {
+  background-color: var(--button-hover-color);
+  cursor:pointer;
+}
+
+/* -----Footer----- */
 
 footer {
-  font-weight: 300;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2rem;
-  background: var(--main-gray);
-  border-top: 4px solid var(--main-red);
+  font-weight: 0.8rem;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5px 50px;
+  max-width: 100vw;
+  background: var(--footer-color);
+  border-top:solid 2px rgba(0, 0, 0, 0.4);
 }
 
 footer > p {
-  margin: 2rem;
+  margin: 0.5rem;
+  text-align: right;
 }
 
-footer i {
-  vertical-align: middle;
-}
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
+
+
+/* ------------ media 1280px -------------- */
+@media (max-width: 1280px) {
+ 
   html {
-    font-size: 60%;
+    font-size: 90%;
+    line-height: 90%;
+   }
+
+/* --- nav --- */
+  .nav-list {
+  margin-right: 2rem;
+  }
+
+/* --- welcome --- */
+.hello #hello {
+  margin-left: -500px;
+}
+  #hello-name {
+    margin-top: 70px;
+  }
+  #hello-title {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  .device1 {
+    max-width: 300px;
+  }
+  
+  .device2 {
+    margin-right: -110px;
+    max-width: 230px;
+  }
+  
+  .device3 {
+    max-width: 300px;
+  }
+
+  /* --- about me --- */
+  .title{
+    margin-top: 90px;
+    margin-bottom: 40px;
+  }
+  
+  .about-me p {
+    width: 80%;
+  }
+  
+  .my-photo-wrapper{
+    align-self: center;
+  }
+  
+  #my-photo{
+    max-width: 90%;
+  }
+
+  /* --- qualification --- */
+  .qualification-article p {
+    width: 85%;
+  }
+  #certification-image{
+    justify-self: center;
+    max-width:80%;
+  }
+
+  /* --- skills --- */
+  .skills-container li{
+    margin-bottom: 5px;
+  }
+
+  .skill-sentense p{
+    font-size: 2.8rem;
+    line-height:3.3rem;
+    letter-spacing: 3px;
+  }
+
+  .skill_heading {
+    font-size: 1.8rem;
+  }
+
+  /* --- project --- */
+  .project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:2rem;
   }
 }
 
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
+
+/* ------------ media 900px -------------- */
+@media (max-width: 900px) {
   html {
-    font-size: 58%;
+    font-size: 75%;
+  }
+
+/* --- welcome --- */
+  .hello #hello {
+    margin-left: -300px;
+  }
+  #hello-name {
+    margin-top: 50px;
+  }
+  #hello-title {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .device1 {
+    max-width: 200px;
+  }
+  .device2 {
+    margin-right: -65px;
+    max-width: 130px;
+  }
+  .device3 {
+    max-width: 200px;
+  }
+
+  /* --- about me --- */
+
+  .title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .about-container {
+    display: grid;
+    grid-template-columns:  repeat(8, 1fr);
+    grid-template-rows:  repeat(3, 80px);
+    margin-top: 70px;
+    margin-bottom: 0px;
+  }
+  .about-me p {
+    width: 95%;
+    grid-column: 4 / 8;
+    margin-top:10px; 
+  }
+  .my-photo-wrapper{
+    grid-column: 2 / 4;
+    grid-row: 2/4;
+    margin-top: 50px;
+  }
+  #my-photo{
+    max-width: 90%;
+  }
+
+  /* --- qualification --- */
+  .qualification-article{
+    margin-left: 0px; 
+  }
+  .qualification-article p {
+    width: 95%;
+  }
+  #certification-image{
+    justify-self: end;
+    max-width:85%;
+  }
+
+  /* --- skills --- */
+
+  .skills-container{
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr);
+    grid-template-rows:  repeat(5, 120px);
+    margin-bottom: 0px;
+    margin-right: 10px;
+    grid-gap: 5px;
+  }
+  .skills-container li{
+    margin-bottom: 5px;
+  }
+  .skill_heading {
+    font-size: 1.8rem;
+  }
+  .skill-sentense {
+    margin-left: 50px;
+  }
+  .skill_heading {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  /* --- project --- */
+  .project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-gap:1.5rem;
   }
 }
+
+/* ------------ media 750px -------------- */
+
+
+
+/* ------------ media 460px -------------- */
 
 /* 460px / 16px = 28.75em */
 @media (max-width: 28.75em) {
   html {
     font-size: 55%;
   }
+
+
+
+
+
 }
 @media (max-width: 30.625em) {
   .projects-section {
