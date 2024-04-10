@@ -396,7 +396,12 @@ a:hover {
 }
 .project-image{
   height: auto;
-  width: 100%
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.projectItem{
+  background-color: var(--nav-color);
 }
 
 .project-name {
