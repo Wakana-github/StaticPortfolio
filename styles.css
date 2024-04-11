@@ -215,9 +215,9 @@ a:hover {
 }
 
 .about-me p {
-  width: 75%;
+  width: 80%;
   height: auto;
-  grid-column: 5 / 8;
+  grid-column: 5 / 9;
   grid-row: 2 / 4;
   align-self: start;
   justify-self: center;
