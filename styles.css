@@ -414,14 +414,6 @@ a:hover {
  margin: 100px 0 50px 100px;;
 }
 
-#contact{
-  border: none;
-  margin-bottom: 100px;
-}
-
-#contact > p{
-  margin: 0 0 0 120px;
-}
 
 .contact-form-container{
   display: grid;
@@ -429,6 +421,16 @@ a:hover {
   margin: 40px 0 0 40px;
   justify-items: center;
   align-items: center;
+}
+
+#contact{
+  border: none;
+  grid-column:  1/ 2;
+  margin-bottom: 100px;
+}
+
+#contact > p{
+  margin: 0 0 0 120px;
 }
 
 .icons{
