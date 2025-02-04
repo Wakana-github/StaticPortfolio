@@ -975,7 +975,71 @@ footer > p {
   }
 
   /* -----nav----- */
+
+  .hp_displayPC {
+    display: none !important;
+	}
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+  }
+  /* line */
+  #bl_hamburgerLine {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin: 15px 10px;
+    cursor: pointer;
+  }
+  #bl_hamburgerLine span {
+    display: block;
+    position: absolute;
+    right: 0;
+    background-color: #444;
+    height: 2px;
+    width: 100%;
+    transition: .3s;
+  }
+  #bl_hamburgerLine span:first-of-type {
+    top: 10px;
+  }
+  #bl_hamburgerLine span:nth-of-type(2n) {
+    top: 30px;
+  }
+  #bl_hamburgerLine span:last-of-type {
+    top: 50px;
+  }
+  #bl_hamburgerLine.active {
+    z-index: 1001;
+  }
+  #bl_hamburgerLine.active span {
+    background-color: #fff;
+  }
+  #bl_hamburgerLine.active span:first-of-type {
+    transform: rotate(135deg);
+    top: 15px;
+  }
+  #bl_hamburgerLine.active span:nth-of-type(2n) {
+    opacity: 0;
+    transform: scale(0);
+  }
+  #bl_hamburgerLine.active span:last-of-type {
+    transform: rotate(-135deg);
+    top: 15px;
+  }
+
+
+
+
   .nav {
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -997,6 +1061,12 @@ footer > p {
     padding: 5px 5px;
     text-align: center;
     width: auto;
+  }
+
+  .nav.active{
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
   }
 
   /* --- welcome --- */
@@ -1138,7 +1208,7 @@ footer > p {
 
 .subNav li{
   text-align: center;
-  padding-left: 10px;
+  padding-top: 10px;
   list-style: none;
   text-align: center;
   width: auto;
