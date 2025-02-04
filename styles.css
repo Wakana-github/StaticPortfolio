@@ -86,15 +86,15 @@ a:hover {
 /* -----nav----- */
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  box-sizing: border-box;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
   background: var(--nav-color);
-  padding: 10px;
-
+  padding: 0px;
   font-size: 1.2rem;
 }
  ul {
@@ -510,9 +510,9 @@ footer {
   
   font-weight: 0.8rem;
   width: 100%;
-  height: 50px;
-  padding: 5px 50px;
-  max-width: 100vw;
+  height: auto;
+  padding: 5px 0px;
+  max-width: 100%;
   background: var(--footer-color);
   border-top:solid 2px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -530,11 +530,11 @@ footer > p {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top:10px;
+  padding:10px;
 }
 
 .subNav li{
-  padding-left: 50px;
+  padding-left: 15px;
   list-style: none;
 }
 
@@ -905,8 +905,6 @@ footer > p {
    justify-items: center;
    align-items: center;
  }
- 
-
 
 }
 
@@ -921,7 +919,7 @@ footer > p {
   /* -----nav----- */
   .nav-list {
     display: flex;
-    margin-right: 2rem;
+    margin-right: 1rem;
     font-size: 14px;
   }
   /* --- welcome --- */
@@ -978,13 +976,27 @@ footer > p {
 
   /* -----nav----- */
   .nav {
-    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
   }
   .nav-list {
-    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
   }
   .nav li{
-    padding: 5px 5px 0 5px;
+    padding: 5px 5px;
+    text-align: center;
+    width: auto;
   }
 
   /* --- welcome --- */
@@ -1107,6 +1119,29 @@ footer > p {
 /* -----contact form----- */
 #contact {
   margin-bottom: 60px;
+}
+
+/* -----subnavi------*/
+
+
+.subNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height:auto;
+  padding-top:10px;
+  left: 0;
+}
+
+.subNav li{
+  text-align: center;
+  padding-left: 10px;
+  list-style: none;
+  text-align: center;
+  width: auto;
 }
 
 
