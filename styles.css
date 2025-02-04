@@ -760,6 +760,7 @@ footer > p {
 @media (max-width: 750px) {
   html {
     font-size: 70%;
+    line-height:1.2;
   }
   body{
     margin: 5% auto;
@@ -914,6 +915,7 @@ footer > p {
 @media (max-width: 500px) {
   html {
     font-size: 70%;
+    line-height: 1.2;
   }
 
   /* -----nav----- */
@@ -971,7 +973,8 @@ footer > p {
 @media (max-width: 430px) {
 
   html{
-    font-size:70%;
+    font-size:68%;
+    line-height: 1.2;
   }
 
   /* -----nav----- */
