@@ -403,7 +403,6 @@ a:hover {
 }
 
 .project-description {
-  font-size:1.5rem;
   text-align: center;
   padding: 10px 20px 20px 20px;
 }
@@ -421,7 +420,6 @@ a:hover {
 }
 
 #contact > p{
-  font-size: 1.6rem;
   margin: 0 0 0 120px;
 }
 
