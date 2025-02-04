@@ -25,9 +25,6 @@
         <li>
           <a href="#projects">my work</a>
         </li>
-        <li>
-          <a href="#contact">contact</a>
-        </li>
     </ul>
   </nav>
 
@@ -204,22 +201,28 @@
 
   <!-- Contact -->
     <fieldset id="contact">
-        <h1 class="title contact-form-title">CONTACT</h1>
+        <h1 class="title contact-form-title">CONTACT FORM</h1>
         <p>Have you got a question?
-          <br>Please send me a sessage through my Linkedin profile.</p>
+          <br>Please send me a sessage through this form.</p>
 
       <!-- Contact form -->
       <div class="contact-form-container">
         <div class="contact-content">
-          <ul class="icons">
-            <li>
-              <a href="https://www.linkedin.com/in/wakanagushi" class="Linkedin"><img src= "./image/LI-In-Bug.png" alt=”Linkedin”></a>
-            </li>
-            <li>
-              <a href="https://github.com/Wakana-github" class="Github"><img src="./image/github-mark.png" alt=”Github”></a>
-            </li>
-          </ul>
-          
+          <form class="contact-form" method="POST" target="_blank" action=""></form>
+            <label class="form-heading required" for="name" id="name-label">Name:</label>
+            <div class="name">
+              <input type="text" id="name" name="name" required placeholder="Full Name">
+            </div>
+            <label class="form-heading required" for="email" id="email-label" required>Email:</label>
+            <div class="email">
+              <input type="email" id="email" required placeholder="Email">
+            </div>
+            <label class="form-heading" for="textbox">Message:</label>
+            <div class="textbox">
+              <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here"></textarea>
+            </div>
+            <button id="submit-button" type="submit" value="submit">Submit</button>
+          </form>
         </div>
 
         <!-- letter-image -->
@@ -247,9 +250,6 @@
         </li>
         <li>
           <a href="#projects">my work</a>
-        </li>
-        <li>
-          <a href="#contact">contact</a>
         </li>
     </ul>
   </footer>
