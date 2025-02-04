@@ -913,7 +913,7 @@ footer > p {
 
 @media (max-width: 500px) {
   html {
-    font-size: 65%;
+    font-size: 70%;
   }
 
   /* -----nav----- */
@@ -971,7 +971,7 @@ footer > p {
 @media (max-width: 430px) {
 
   html{
-    font-size:65%;
+    font-size:70%;
   }
 
   /* -----nav----- */
