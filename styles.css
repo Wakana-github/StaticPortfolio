@@ -423,12 +423,6 @@ a:hover {
   margin: 0 0 0 120px;
 }
 
-.required::after {
-  content: " *";
-  color: red;
-  vertical-align: middle;
-}
-
 .contact-form-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -438,25 +432,34 @@ a:hover {
 }
 
 .icons{
-  grid-column:  1/ 2;
+  grid-column:  2/ 3;
   list-style:none;
   display:flex;
   justify-content:start;
   }
 
 .contact-content{
-  grid-column:  1/ 2;
+  grid-column:  2/ 3;
   justify-self:center;
 }
 
 .icons img {
-  width: 80px;
-  height: 80px; 
+  width: 100px;
+  height: 100px; 
   max-width: 100px;
-  padding:10px;
+  padding:15px;
 }
 
-/*.contact-form {
+/* this part is for when we use contact form */
+
+/*
+.required::after {
+  content: " *";
+  color: red;
+  vertical-align: middle;
+}
+
+.contact-form {
   grid-column:  1/ 2;
 }
 
@@ -465,14 +468,9 @@ a:hover {
   font-size: 1.3rem;
   margin-top: 50px;
   margin-bottom: 30px;
-}*/
-
-.mail-image {
-  grid-column:  2/ 3;
-  justify-self:center;
 }
 
-input, textarea {
+ input, textarea {
   background: var(--input-color);
   margin:15px 0;
   line-height: 1.5rem;
@@ -481,14 +479,7 @@ input, textarea {
   border-bottom-width: 2px;
   font-size: 1rem;
   width: 80%
-}
-
-
-
-#mail-icon {
-  width: 60%;
-  height: auto;
-}
+} 
 
 #submit-button {
   padding: 10px 60px;
@@ -501,6 +492,20 @@ input, textarea {
   background-color: var(--button-hover-color);
   cursor:pointer;
 }
+
+.mail-image {
+  grid-column:  2/ 3;
+  justify-self:center;
+}
+
+
+#mail-icon {
+  width: 60%;
+  height: auto;
+}
+*/
+
+
 
 /* -----Footer----- */
 
